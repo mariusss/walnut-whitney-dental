@@ -1,5 +1,5 @@
 [build]
-  command   = "npm install --legacy-peer-deps && npx vite build --config vite.netlify.config.ts"
+  command   = "rm -f pnpm-lock.yaml && npm install --legacy-peer-deps && npx vite build --config vite.netlify.config.ts"
   publish   = "dist/public"
 
 [build.environment]
